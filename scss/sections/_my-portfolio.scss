@@ -1,0 +1,72 @@
+.my-portfolio {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    &__text {
+        margin: auto;
+        max-width: 461px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        h2 {
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 152%;
+            text-align: center;
+            color: #f3f4f6;
+            span {
+                color: $yellow-color;
+            }
+        }
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 169%;
+            text-align: center;
+            color: #9ca3af;
+        }
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 27px;
+        grid-row-gap: 29px;
+        &__item {
+            &.big {
+                display: flex;
+                grid-area: 1 / 1 / 3 / 3;
+            }
+            &.regular {
+                display: flex;
+                &.second {
+                    grid-area: 1 / 3 / 2 / 4;
+                }
+
+                &.third {
+                    grid-area: 1 / 4 / 2 / 5;
+                }
+
+                &.fourh {
+                    grid-area: 2 / 3 / 3 / 4;
+                }
+
+                &.fifth {
+                    grid-area: 2 / 4 / 3 / 5;
+                }
+            }
+            img {
+                max-width: 100%;
+                border-radius: 12px;
+                object-fit: cover;
+            }
+        }
+        @media screen and (max-width:425px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

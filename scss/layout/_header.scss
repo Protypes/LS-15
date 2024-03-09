@@ -1,0 +1,44 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $first-color;
+    z-index: 4;
+        h1 {
+            font-weight: 700;
+            font-size: 24px;
+            color: #fff;
+            span {
+                color: $yellow-color;
+            }
+            @media screen and (max-width:768px) {
+                font-size: 18px;
+            }
+        }
+
+        ul {
+            display: flex;
+            gap: 27px;
+            align-items: center;
+            
+                li {
+                    font-weight: 400;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    color: #9ca3af;
+                    transition: .2s;
+                    &:hover {
+                        color: #fff;
+                    }
+                    @media screen and (max-width:768px) {
+                        font-size: 14px;
+                    }
+                }
+
+        }
+        @media screen and (max-width:425px) {
+            display: none;
+        }
+}

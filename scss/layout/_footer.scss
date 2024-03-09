@@ -1,0 +1,40 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    align-items: center;
+    h1 {
+        font-weight: 700;
+        font-size: 40px;
+        text-align: center;
+        color: #fff;
+        padding-bottom: 24px;
+    }
+    p {
+        font-weight: 400;
+        max-width: 685px;
+        font-size: 16px;
+        line-height: 169%;
+        text-align: center;
+        color: #9ca3af;
+        padding-bottom: 56px;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        li {
+            transition: .2s;
+            svg{
+                & path {
+                    transition: .5s;
+                }
+                &:hover path {
+                    fill: $yellow-color;
+                }
+            }
+        }
+    }
+}

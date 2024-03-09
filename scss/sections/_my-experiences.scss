@@ -1,0 +1,73 @@
+.my-experiences {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    background-color: $second-color;
+    padding-top: 85px;
+    padding-bottom: 85px;
+    &__text {
+        max-width: 730px;
+        h2 {
+            font-family: $second-family;
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 152%;
+            color: #f3f4f6;
+            span {
+                color: $yellow-color;
+            }
+        }
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 169%;
+            color: #9ca3af;
+        }
+    }
+
+    &__items {
+        display: flex;
+        gap: 29px;
+        &__item {
+            display: flex;
+            flex-direction: column;
+            background-color: $first-color;
+            border-radius: 12px;
+            padding: 32px;
+            align-items: center;
+            width: -webkit-fill-available;
+            h4 {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 135%;
+                color: #d1d5db;
+                padding-bottom: 8px;
+            }
+            h3 {
+                font-weight: 700;
+                font-size: 26px;
+                line-height: 158%;
+                text-align: center;
+                color: $yellow-color;
+                padding-bottom: 4px;
+            }
+            h5 {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 169%;
+                color: #6b7280;
+                padding-bottom: 8px;
+            }
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 169%;
+                color: #6b7280;
+            }
+            
+        }
+        @media screen and (max-width:425px) {
+            flex-direction: column;
+        }
+    }
+}

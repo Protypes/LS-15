@@ -1,0 +1,92 @@
+.contact-me {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    &__text {
+        max-width: 685px;
+        margin: auto;
+        padding-bottom: 56px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        h2 {
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 152%;
+            text-align: center;
+            color: #f3f4f6;
+            span {
+                color: $yellow-color;
+            }
+        }
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 169%;
+            text-align: center;
+            color: #9ca3af;
+        }
+    }
+
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        &__info {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            p {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 256%;
+                color: #eab308;
+                span {
+                    color: #f3f4f6;
+                    font-weight: 400;
+                }
+            }
+        }
+        &__inputs {
+            display: flex;
+            gap: 32px;
+            flex-direction: column;
+            input{
+                background: #1f2937;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 256%;  
+                color: #f3f4f6;
+                padding: 0px 0px 0px 18px;
+                border: unset;
+                &.name {
+                    width: 540px;
+                    height: 63px;
+                    @media screen and (max-width:425px) {
+                        display: none;
+                    }
+                }
+            }
+            textarea {
+                background: #1f2937;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 256%;
+                color: #f3f4f6;
+                padding: 11px 0px 0px 18px;
+                border: unset;
+                &.msg {
+                    resize: none; 
+                    width: 540px;
+                    height: 166px;
+                    @media screen and (max-width:425px) {
+                        display: none;
+                    }
+                }   
+            }
+        }
+        @media screen and (max-width:425px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+}
